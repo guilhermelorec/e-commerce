@@ -26,7 +26,7 @@
         
         <p-floatLabel>
             <input pInputText id="email" [(ngModel)]="email" />
-            <label [ngStyle]="{color: 'var(--primary-color)'}" for="email">Email</label>
+            <label [ngStyle]="{color: 'var(--primary-color)'}" for="email">E-mail</label>
         </p-floatLabel>
 
         
@@ -40,8 +40,10 @@
 
         <!-- botão -->
         <div class="btn-container">
-            <a><p-button label="casdastrar" [raised]="true"/></a>
+            <p-toast />
+            <a><p-button (click)="salvarUsuario()" label="Cadastrar" [raised]="true"/></a>
         </div>
+
 
     </div>
 </div>
