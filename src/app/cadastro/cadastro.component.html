@@ -1,14 +1,29 @@
-
 <h1 [ngStyle]="{color: 'var(--primary-color)'}">LAS PLATAS</h1>
 
-<div class="centered-container">
+<div class="centered-container" >
     <div class="flex-column gap-2 box-shadow">
         
         <!-- titulo -->
-        <h2 [ngStyle]="{color: 'var(--primary-color)'}">Login</h2>
+        <h2 [ngStyle]="{color: 'var(--primary-color)'}">Criar conta</h2>
 
+        <!-- input nome  -->
+        <p-floatLabel>
+            <input pInputText id="Nome" [(ngModel)]="nome" />
+            <label [ngStyle]="{color: 'var(--primary-color)'}" for="nome">Nome</label>
+        </p-floatLabel>
+
+        <!-- input cpf -->
+
+        <p-floatLabel class="inputMask">
+            <p-inputMask  
+                mask="999.999.999-99" 
+                [(ngModel)]="cpf" 
+                id="cpf" />
+            <label [ngStyle]="{color: 'var(--primary-color)'}" for="cpf_input">CPF</label>
+        </p-floatLabel>
 
         <!-- input email -->
+        
         <p-floatLabel>
             <input pInputText id="email" [(ngModel)]="email" />
             <label [ngStyle]="{color: 'var(--primary-color)'}" for="email">Email</label>
@@ -16,6 +31,7 @@
 
         
         <!-- input senha -->
+
         <p-floatLabel>
             <p-password  [(ngModel)]="password" [feedback]="false" [toggleMask]="true"/>
             <label [ngStyle]="{color: 'var(--primary-color)'}" for="password">Senha</label>
@@ -24,14 +40,8 @@
 
         <!-- botão -->
         <div class="btn-container">
-            <a><p-button label="Entrar" [raised]="true"/></a>
+            <a><p-button label="casdastrar" [raised]="true"/></a>
         </div>
 
-
-        <!-- botão cadastro -->
-        <div class="py-2">
-            <a><p-button label="cadastre-se" [link]="true" [routerLink]="['/cadastro']"/></a>
-        </div>
-       
     </div>
 </div>
