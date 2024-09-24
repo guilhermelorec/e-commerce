@@ -1,14 +1,19 @@
-<div class="card">
-    <p-galleria 
-        [value]="images" 
-        [numVisible]="5" 
-        [circular]="true" 
-        [showItemNavigators]="true" 
-        [showThumbnails]="false" 
-        [responsiveOptions]="responsiveOptions" 
-        [containerStyle]="{ 'max-width': '640px' }">
+<app-menubar></app-menubar>
+<!-- imagens -->
+
+<div class="card ">
+    <p-galleria
+        [value]="images"
+        [numVisible]="5"
+        [circular]="true"
+        [showItemNavigators]="true"
+        [showThumbnails]="false"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="">
             <ng-template pTemplate="item" let-item>
-                <img [src]="item.source" [alt]="item.alt" style="width: 100%; display: block;" />
+                <img [src]="item.itemImageSrc" style="width: 101%; display: block; margin-top: 0%;" />
             </ng-template>
     </p-galleria>
-</div>
+  </div>
+
+  

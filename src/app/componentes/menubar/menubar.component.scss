@@ -1,0 +1,24 @@
+.p-menubar .p-menubar-end {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .p-menuitem-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+  }
+  
+  .p-menuitem-link .pi {
+    font-size: 1.2rem;
+  }
+  
+  .search-bar {
+    margin-left: 2rem;
+  }
+  
+  .search-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }

@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
 import { PhotoService } from '../services/photo-service.service';
+import { MenubarComponent } from '../componentes/menubar/menubar.component';
 
 @Component({
     selector: 'galleria-item-without-thumbnails-demo',
     templateUrl: './index.component.html',
     standalone: true,
-    imports: [GalleriaModule],
+    imports: [GalleriaModule, MenubarComponent],
     providers: [PhotoService]
 })
 export class galleria1 implements OnInit {
@@ -30,6 +31,8 @@ export class galleria1 implements OnInit {
     constructor(private photoService: PhotoService) {}
 
     ngOnInit() {
-        this.images = this.photoService.getImages();
+      this.photoService.getImages().then((images) => {
+        this.images = images;
+      });
     }
 }
