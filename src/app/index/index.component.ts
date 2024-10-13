@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
-import { PhotoService } from '../services/photo-service.service';
 import { MenubarComponent } from '../componentes/menubar/menubar.component';
+import { ImageModule } from 'primeng/image';
+import { ButtonModule } from 'primeng/button';
+import { AvatarModule } from 'primeng/avatar';
+import { TagModule } from 'primeng/tag';
 
 @Component({
     selector: 'galleria-item-without-thumbnails-demo',
     templateUrl: './index.component.html',
     standalone: true,
-    imports: [GalleriaModule, MenubarComponent],
-    providers: [PhotoService]
+    imports: [GalleriaModule, MenubarComponent, ImageModule, ButtonModule, AvatarModule, TagModule],
+    providers: []
 })
-export class galleria1 implements OnInit {
+export class galeria1 implements OnInit {
     images: any[] | undefined;
 
     responsiveOptions: any[] = [
@@ -27,12 +30,7 @@ export class galleria1 implements OnInit {
             numVisible: 1
         }
     ];
-
-    constructor(private photoService: PhotoService) {}
-
-    ngOnInit() {
-      this.photoService.getImages().then((images) => {
-        this.images = images;
-      });
+    ngOnInit(): void {
+        
     }
 }

@@ -1,19 +1,32 @@
 <app-menubar></app-menubar>
-<!-- imagens -->
 
-<div class="card ">
-    <p-galleria
-        [value]="images"
-        [numVisible]="5"
-        [circular]="true"
-        [showItemNavigators]="true"
-        [showThumbnails]="false"
-        [responsiveOptions]="responsiveOptions"
-        [containerStyle]="">
-            <ng-template pTemplate="item" let-item>
-                <img [src]="item.itemImageSrc" style="width: 101%; display: block; margin-top: 0%;" />
-            </ng-template>
-    </p-galleria>
-  </div>
+<div class="centered-container">
+    <div class="card flex justify-content-center">
+        <p-image 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCi5zzsjebJGQvAtUzt7249YYibwB4ih77oQ&s"
+            alt="Image"
+            width="380" />
+    </div>
 
-  
+    <div class="card1">
+        <div class="flex flex-wrap gap-5">
+            <div class="flex-auto">
+                <p-avatar 
+                    image="https://res.cloudinary.com/vuca-solution/image/upload//w_160,h_160,c_fill,q_auto,fl_lossy/v1621601324/storage.vucasolution.com.br/lifeboxburger/arqs/vucafood/logo/kn8qbynhsh9iumhuktzm.jpg" 
+                    styleClass="mr-2" 
+                    size="xlarge" 
+                    shape="circle"/> 
+                    
+                    <h3>Lifebox Setor Oeste</h3>
+
+                    <p-tag severity="danger" value="fechado"/>
+                    <p>Pedido mínimo: R$ 20,00</p>
+                    <p>_____________________________________________________</p>
+
+                    <h3>Combo Individual Hamburguer + Fritas</h3>
+
+
+            </div>
+        </div>
+    </div>
+</div>
