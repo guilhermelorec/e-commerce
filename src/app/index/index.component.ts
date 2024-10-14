@@ -5,12 +5,14 @@ import { ImageModule } from 'primeng/image';
 import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 import { TagModule } from 'primeng/tag';
+import { OrderListComponent } from '../order-list/order-list.component';
+
 
 @Component({
     selector: 'galleria-item-without-thumbnails-demo',
     templateUrl: './index.component.html',
     standalone: true,
-    imports: [GalleriaModule, MenubarComponent, ImageModule, ButtonModule, AvatarModule, TagModule],
+    imports: [ OrderListComponent, GalleriaModule, MenubarComponent, ImageModule, ButtonModule, AvatarModule, TagModule],
     providers: []
 })
 export class galeria1 implements OnInit {
@@ -31,6 +33,6 @@ export class galeria1 implements OnInit {
         }
     ];
     ngOnInit(): void {
-        
+
     }
 }
