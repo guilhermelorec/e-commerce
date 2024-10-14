@@ -33,7 +33,7 @@
           ],
           "styles": [
             "src/styles.scss",
-            "primeng/resources/themes/md-dark-deeppurple/theme.css",
+            "primeng/resources/themes/arya-green/theme.css",
             "node_modules/primeng/resources/primeng.min.css",
             "primeicons/primeicons.css"
           ],
