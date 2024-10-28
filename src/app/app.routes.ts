@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { galeria1 } from './index/index.component';
+import { CarrosselComponent } from './carrossel/carrossel.component';
 
 
 export const routes: Routes = [

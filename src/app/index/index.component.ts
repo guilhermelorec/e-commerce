@@ -5,14 +5,16 @@ import { ImageModule } from 'primeng/image';
 import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 import { TagModule } from 'primeng/tag';
+import { CarrosselComponent } from '../carrossel/carrossel.component';
 import { OrderListComponent } from '../order-list/order-list.component';
+
 
 
 @Component({
     selector: 'galleria-item-without-thumbnails-demo',
     templateUrl: './index.component.html',
     standalone: true,
-    imports: [ OrderListComponent, GalleriaModule, MenubarComponent, ImageModule, ButtonModule, AvatarModule, TagModule],
+    imports: [GalleriaModule, MenubarComponent, ImageModule, ButtonModule, AvatarModule, TagModule, CarrosselComponent, OrderListComponent],
     providers: []
 })
 export class galeria1 implements OnInit {
