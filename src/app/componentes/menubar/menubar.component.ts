@@ -38,19 +38,9 @@ export class MenubarComponent implements OnInit {
         ],
       },
       {
-        label: 'Lista dos produtos',
-        icon: PrimeIcons.BOOK,
-        routerLink: '/gestor/produtos',
-      },
-      {
         label: 'Lista dos pedidos',
         icon: 'pi pi-chart-bar',
         routerLink: '/gestor/pedidos',
-      },
-      {
-        label: 'Cadastro de Produtos',
-        icon: PrimeIcons.PLUS,
-        routerLink: '/cadastro/produto',
       },
     ];
   }
