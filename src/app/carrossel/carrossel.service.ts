@@ -15,5 +15,4 @@ export class CarrosselService {
   popularCarrossel(): Observable<ICarrosselShow[]>{
     return this.http.get<ICarrosselShow[]>(this.apiUrl)
   }
-
 }

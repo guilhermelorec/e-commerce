@@ -1,7 +1,7 @@
 <div class="card">
     <p-dataView #dv [value]="orderList2" class="w-full md:w-8">
         <ng-template pTemplate="list" let-orderList2>
-            <div class="grid grid-nogutter">
+            <div class="grid grid-nogutter" style="background-color: black; border-radius: 10px;">
                 <div class="col-12" *ngFor="let item of orderList2; let first = first" class="col-12">
                     <div class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3"
                          [ngClass]="{ 'border-top-1 surface-border': !first }"

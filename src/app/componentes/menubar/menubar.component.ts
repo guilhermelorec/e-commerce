@@ -6,6 +6,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { InputTextModule } from 'primeng/inputtext';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-menubar',
@@ -17,6 +18,7 @@ import { RippleModule } from 'primeng/ripple';
     InputTextModule,
     RippleModule,
     CommonModule,
+    ButtonModule
   ],
   templateUrl: './menubar.component.html',
   styleUrls: ['./menubar.component.scss'],
@@ -36,11 +38,6 @@ export class MenubarComponent implements OnInit {
             routerLink: '/login',
           },
         ],
-      },
-      {
-        label: 'Lista dos pedidos',
-        icon: 'pi pi-chart-bar',
-        routerLink: '/gestor/pedidos',
       },
     ];
   }
