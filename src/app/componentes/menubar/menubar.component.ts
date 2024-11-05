@@ -28,22 +28,9 @@ export class MenubarComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      {
-        label: 'Conta',
-        icon: 'pi pi-user',
-        items: [
-          {
-            label: 'Sair',
-            icon: PrimeIcons.SIGN_OUT,
-            routerLink: '/login',
-          },
-        ],
-      },
+      {},
     ];
   }
 
-  logout() {
-    // Lógica de logout
-    console.log('Usuário saiu');
+
   }
-}

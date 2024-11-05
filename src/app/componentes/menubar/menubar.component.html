@@ -4,7 +4,7 @@
         <a
           [routerLink]="item.routerLink"
           pRipple
-          class="flex align-items-center p-menuitem-link"
+          class="flex align-items-center "
         >
           <span [class]="item.icon"></span>
           <span>{{ item.label }}</span>
@@ -13,32 +13,23 @@
             [ngClass]="{ 'ml-auto': !root, 'ml-2': root }"
             [value]="item.badge"
           ></p-badge>
-          <span
-            *ngIf="item.shortcut"
-            class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1"
-            >{{ item.shortcut }}</span
-          >
-          <i
-            *ngIf="item.items"
-            [ngClass]="[
-              'pi',
-              root ? 'pi-angle-down ml-2' : 'pi-angle-right ml-auto'
-            ]"
-          ></i>
-        </a>
-      </ng-template>
-      <ng-template pTemplate="end">
-        <div class="flex align-items-center gap-2 search-bar">
-          <i class="pi pi-search search-icon"></i>
-          <!-- Ícone de lupa -->
-          <input
-            type="text"
-            pInputText
-            placeholder="pesquisar"
-            class="w-8rem sm:w-auto ml-2"/>
 
-            <a><p-button icon="pi pi-shopping-cart " styleClass="ml-2" [link]="true" [routerLink]="['/carrinho']"/></a>
-        </div>
+          <span *ngIf="item.shortcut"class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1">{{ item.shortcut }}</span><i *ngIf="item.items"[ngClass]="['pi',root ? 'pi-angle-down ml-2' : 'pi-angle-right ml-auto' ]"></i></a>
+
+            <div style="font-weight: bold; font-size: 30px;">Burger House
+            <a style="margin-right: 8px;" href="https://instagram.com/burger.house062"><p-button icon="pi pi-instagram" class="white-space-nowrap" severity="help" ></p-button></a>
+            <a href="https://api.whatsapp.com/send?phone=5562991503073"><p-button icon="pi pi-whatsapp" class="white-space-nowrap" severity="success" ></p-button></a>
+          </div> 
+ 
+          <div style="display: flex; align-items: center; position: absolute;margin-top: 30px; margin-left: 1400px; background: local;">
+            <p-avatar 
+                      image="https://i.pinimg.com/236x/de/74/e4/de74e4a002b0e7eaaa165d1df85fac98.jpg"
+                      styleClass="mr-2"
+                      size="xlarge"
+                      shape="square"
+                      />
+          </div>
+  
       </ng-template>
     </p-menubar>
   </div>
